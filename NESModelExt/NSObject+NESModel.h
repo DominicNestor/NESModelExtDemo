@@ -7,9 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NESNumberHandler.h"
-#import "NESDateHandler.h"
-#import "NESModelFormat.h"
 
 @interface NSObject (NESModel)
 

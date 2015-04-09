@@ -9,7 +9,7 @@
 #import "NESMainViewController.h"
 #import "NESDateHandler.h"
 #import "NESDemoModel.h"
-#import "NSObject+NESModel.h"
+#import "NESModelExt.h"
 
 @interface NESMainViewController ()
 

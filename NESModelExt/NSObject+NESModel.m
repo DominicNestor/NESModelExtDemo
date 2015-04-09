@@ -8,6 +8,8 @@
 
 #import "NSObject+NESModel.h"
 #import "NESIVar.h"
+#import "NESNumberHandler.h"
+#import "NESDateHandler.h"
 #import <objc/runtime.h>
 
 @implementation NSObject (NESModel)

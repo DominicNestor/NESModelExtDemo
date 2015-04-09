@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "NSObject+NESModel.h"
+#import "NESModelExt.h"
 #import "NESDemoModel.h"
 
 @interface NESModelExtDemoTests : XCTestCase

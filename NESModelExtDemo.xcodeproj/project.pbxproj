@@ -69,6 +69,7 @@
 		8E281E2C1AD6219F00108997 /* NESThirdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESThirdModel.m; sourceTree = "<group>"; };
 		8E281E321AD621AE00108997 /* NESDateHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESDateHandlerTest.m; sourceTree = "<group>"; };
 		8E281E331AD621AE00108997 /* NESNumberHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESNumberHandlerTest.m; sourceTree = "<group>"; };
+		8E281E381AD64A1A00108997 /* NESModelExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NESModelExt.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +164,7 @@
 				8E281E1B1AD6219300108997 /* NESNumberHandler.m */,
 				8E281E1C1AD6219300108997 /* NSObject+NESModel.h */,
 				8E281E1D1AD6219300108997 /* NSObject+NESModel.m */,
+				8E281E381AD64A1A00108997 /* NESModelExt.h */,
 			);
 			path = NESModelExt;
 			sourceTree = "<group>";
