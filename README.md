@@ -18,11 +18,11 @@
 		
 ### 数据类型
 
-	数据大体分为对象,模型,字符串,数字,日期和数组,不同字段会根据类型进行自动映射,日期类型会进行单独处理
-	对于日期类型,通过NESDateHandler提供一个默认的NSDateFormatter对该字段进行处理,
-	默认情况下可以自动转换匹配"yyyy-MM-dd HH:mm:ss"格式的日期字符串
-	或者根据时间戳获取从"1970-1-1 00:00:00"开始计算的日期对象,
-	也可以自由修改NESDateHandler的全局配置对日期进行自定义处理.
+数据大体分为对象,模型,字符串,数字,日期和数组,不同字段会根据类型进行自动映射,日期类型会进行单独处理.
+对于日期类型,通过NESDateHandler提供一个默认的NSDateFormatter对该字段进行处理,
+默认情况下可以自动转换匹配"yyyy-MM-dd HH:mm:ss"格式的日期字符串
+或者根据时间戳获取从"1970-1-1 00:00:00"开始计算的日期对象,
+也可以自由修改NESDateHandler的全局配置对日期进行自定义处理.
  
 ### 示例
 
@@ -56,7 +56,8 @@
 				 };
     
 	}
-	
+
+
 * 模型定义
 
 ```objc
@@ -78,7 +79,8 @@
 	@property (nonatomic,retain) NESFourthModel *_path_sub_fourth;
 	@property (nonatomic,retain) NESFourthModel *_path_sub_4th;
 	@end
-	
+
+
 * 映射后通过jsonString生成的json字符串
 
 ```objc
@@ -110,6 +112,7 @@
 					}
 				}
 	}
+
 
 ### 其他细节
 
