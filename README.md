@@ -15,6 +15,7 @@
 *  4.路径映射,当希望将json内部的某个对象直接映射成为模型属性的时候使用,以`_`开头,每一级路径以`_`连接
    以json键作为结尾,路径映射可以包含多级路径
 		例:`_path_demo`,对应json对象中path.demo对应的对象
+*  5.忽略属性,当需要在模型中定义一个json对象中没有的属性,同时在进行json字符串转化时将其忽略的属性时,直接在属性名最后加`_`
 		
 ### 数据类型
 
@@ -78,6 +79,7 @@
 	@property (nonatomic,retain) NESThirdModel *_path_3rd;
 	@property (nonatomic,retain) NESFourthModel *_path_sub_fourth;
 	@property (nonatomic,retain) NESFourthModel *_path_sub_4th;
+	@property (nonatomic,assign) NSString * notExists_;
 	@end
 ```
 

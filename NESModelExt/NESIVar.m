@@ -30,6 +30,8 @@ static const char * numTypes = "islqCISLQfdB";
     
     ivar.keyName = [[ivar.propertyName componentsSeparatedByString:@"_"] lastObject];
     
+    if ((ivar.isTransparent = ivar.keyName.length == 0)) return ivar;
+    
     const char * typeEncoding = ivar_getTypeEncoding(v);
     
     ivar.typeEncoding = [NSString stringWithUTF8String:typeEncoding];

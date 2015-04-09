@@ -23,6 +23,7 @@
 @property (nonatomic,assign) BOOL isDate;
 @property (nonatomic,assign) BOOL isArray;
 @property (nonatomic,assign) BOOL isModel;
+@property (nonatomic,assign) BOOL isTransparent;
 
 +(NESIVar *)ivarWith:(Ivar)v;
 

@@ -14,6 +14,25 @@
 
 @implementation NSObject (NESModel)
 
+-(id)foundationModel
+{
+    return [NSJSONSerialization JSONObjectWithData:[self.jsonString dataUsingEncoding:NSUTF8StringEncoding] options:kNilOptions error:nil];
+}
+
+-(id)foundationArrayWith:(NSArray *)array
+{
+    NSMutableArray *arr = [NSMutableArray array];
+    
+    dispatch_queue_t queue = dispatch_queue_create("foundationArrayQueue", DISPATCH_QUEUE_CONCURRENT);
+    
+    dispatch_apply(arr.count, queue, ^(size_t i) {
+        NSDictionary *dict = [[array objectAtIndex:i] foundationModel];
+        if (dict) [arr addObject:dict];
+    });
+    
+    return array;
+}
+
 +(id)mappingWithObject:(id)object
 {
     if ([object isKindOfClass:[NSDictionary class]])
@@ -39,6 +58,8 @@
         NESIVar *ivar = [NESIVar ivarWith:ivarList[i]];
         id value = nil;
         NSString *key = ivar.path == nil ? ivar.keyName : [NSString stringWithFormat:@"%@.%@",ivar.path,ivar.keyName];
+        
+        if (ivar.isTransparent) return;
         
         if (ivar.isModel || ivar.isArray) {
             value = [NSClassFromString(ivar.className) mappingWithObject:[dict valueForKeyPath:key]];
@@ -98,8 +119,8 @@
     
     for (int i=0; i<count; i++) {
         NESIVar *ivar = [NESIVar ivarWith:ivarList[i]];
+        if (ivar.isTransparent) continue;
         id value = [self valueForKey:ivar.ivarName];
-
         if (ivar.path) {
             NSArray *paths = [ivar.path componentsSeparatedByString:@"."];
             __block NSMutableDictionary *lastPath = pathDict;

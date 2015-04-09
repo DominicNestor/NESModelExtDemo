@@ -62,8 +62,10 @@
     
     NSLog(@"%s-[%s]:%@",__func__,__TIME__,model.jsonString);
     
-//    NSArray *arr = [NESDemoModel mappingWithObject:@[self.fakeData,self.fakeData,self.fakeData,self.fakeData]];
-//    NSLog(@"%s-[%s]:%@",__func__,__TIME__,arr.jsonString);
+    NSLog(@"%s-[%s]:%@",__func__,__TIME__,model.foundationModel);
+    
+    NSArray *arr = [NESDemoModel mappingWithObject:@[self.fakeData,self.fakeData,self.fakeData,self.fakeData]];
+    NSLog(@"%s-[%s]:%@",__func__,__TIME__,arr.foundationModel);
     
     
     // Do any additional setup after loading the view.

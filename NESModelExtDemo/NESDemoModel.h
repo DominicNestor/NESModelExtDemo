@@ -29,5 +29,6 @@
 @property (nonatomic,retain) NESThirdModel *_path_3rd;
 @property (nonatomic,retain) NESFourthModel *_path_sub_fourth;
 @property (nonatomic,retain) NESFourthModel *_path_sub_4th;
+@property (nonatomic,assign) NSString * notExists_;
 
 @end
