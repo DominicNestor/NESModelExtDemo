@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "NSObject+NESModel.h"
+#import "NESDemoModel.h"
 
 @interface NESModelExtDemoTests : XCTestCase
 
@@ -25,9 +27,18 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+-(void)testModelToJson
+{
+    NESOtherModel *model = [NESOtherModel new];
+    model.attr1 = @"test";
+    NSLog(@"%s-[%s]:%@",__func__,__TIME__,model.jsonString);
+}
+
+-(void)testDictToJson
+{
+    NSDictionary * dict = @{@"test":@"123",@"aaa":@"bbb"};
+    NSString *str = dict.jsonString;
+    NSLog(@"%s-[%s]:%@",__func__,__TIME__,str);
 }
 
 - (void)testPerformanceExample {

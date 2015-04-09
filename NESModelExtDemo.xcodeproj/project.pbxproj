@@ -12,6 +12,18 @@
 		8E281DFB1AD6211C00108997 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E281DFA1AD6211C00108997 /* Images.xcassets */; };
 		8E281DFE1AD6211C00108997 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E281DFC1AD6211C00108997 /* LaunchScreen.xib */; };
 		8E281E0A1AD6211C00108997 /* NESModelExtDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E091AD6211C00108997 /* NESModelExtDemoTests.m */; };
+		8E281E1E1AD6219300108997 /* NESDateHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E151AD6219300108997 /* NESDateHandler.m */; };
+		8E281E1F1AD6219300108997 /* NESIVar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E171AD6219300108997 /* NESIVar.m */; };
+		8E281E201AD6219300108997 /* NESModelFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E191AD6219300108997 /* NESModelFormat.m */; };
+		8E281E211AD6219300108997 /* NESNumberHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E1B1AD6219300108997 /* NESNumberHandler.m */; };
+		8E281E221AD6219300108997 /* NSObject+NESModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E1D1AD6219300108997 /* NSObject+NESModel.m */; };
+		8E281E2D1AD6219F00108997 /* NESDemoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E241AD6219F00108997 /* NESDemoModel.m */; };
+		8E281E2E1AD6219F00108997 /* NESFourthModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E261AD6219F00108997 /* NESFourthModel.m */; };
+		8E281E2F1AD6219F00108997 /* NESMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E281AD6219F00108997 /* NESMainViewController.m */; };
+		8E281E301AD6219F00108997 /* NESOtherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E2A1AD6219F00108997 /* NESOtherModel.m */; };
+		8E281E311AD6219F00108997 /* NESThirdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E2C1AD6219F00108997 /* NESThirdModel.m */; };
+		8E281E341AD621AE00108997 /* NESDateHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E321AD621AE00108997 /* NESDateHandlerTest.m */; };
+		8E281E351AD621AE00108997 /* NESNumberHandlerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E281E331AD621AE00108997 /* NESNumberHandlerTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,28 @@
 		8E281E031AD6211C00108997 /* NESModelExtDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NESModelExtDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E281E081AD6211C00108997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E281E091AD6211C00108997 /* NESModelExtDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NESModelExtDemoTests.m; sourceTree = "<group>"; };
+		8E281E141AD6219300108997 /* NESDateHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESDateHandler.h; sourceTree = "<group>"; };
+		8E281E151AD6219300108997 /* NESDateHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESDateHandler.m; sourceTree = "<group>"; };
+		8E281E161AD6219300108997 /* NESIVar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESIVar.h; sourceTree = "<group>"; };
+		8E281E171AD6219300108997 /* NESIVar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESIVar.m; sourceTree = "<group>"; };
+		8E281E181AD6219300108997 /* NESModelFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESModelFormat.h; sourceTree = "<group>"; };
+		8E281E191AD6219300108997 /* NESModelFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESModelFormat.m; sourceTree = "<group>"; };
+		8E281E1A1AD6219300108997 /* NESNumberHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESNumberHandler.h; sourceTree = "<group>"; };
+		8E281E1B1AD6219300108997 /* NESNumberHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESNumberHandler.m; sourceTree = "<group>"; };
+		8E281E1C1AD6219300108997 /* NSObject+NESModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NESModel.h"; sourceTree = "<group>"; };
+		8E281E1D1AD6219300108997 /* NSObject+NESModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NESModel.m"; sourceTree = "<group>"; };
+		8E281E231AD6219F00108997 /* NESDemoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESDemoModel.h; sourceTree = "<group>"; };
+		8E281E241AD6219F00108997 /* NESDemoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESDemoModel.m; sourceTree = "<group>"; };
+		8E281E251AD6219F00108997 /* NESFourthModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESFourthModel.h; sourceTree = "<group>"; };
+		8E281E261AD6219F00108997 /* NESFourthModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESFourthModel.m; sourceTree = "<group>"; };
+		8E281E271AD6219F00108997 /* NESMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESMainViewController.h; sourceTree = "<group>"; };
+		8E281E281AD6219F00108997 /* NESMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESMainViewController.m; sourceTree = "<group>"; };
+		8E281E291AD6219F00108997 /* NESOtherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESOtherModel.h; sourceTree = "<group>"; };
+		8E281E2A1AD6219F00108997 /* NESOtherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESOtherModel.m; sourceTree = "<group>"; };
+		8E281E2B1AD6219F00108997 /* NESThirdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NESThirdModel.h; sourceTree = "<group>"; };
+		8E281E2C1AD6219F00108997 /* NESThirdModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESThirdModel.m; sourceTree = "<group>"; };
+		8E281E321AD621AE00108997 /* NESDateHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESDateHandlerTest.m; sourceTree = "<group>"; };
+		8E281E331AD621AE00108997 /* NESNumberHandlerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NESNumberHandlerTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +92,7 @@
 		8E281DE71AD6211C00108997 = {
 			isa = PBXGroup;
 			children = (
+				8E281E131AD6219300108997 /* NESModelExt */,
 				8E281DF21AD6211C00108997 /* NESModelExtDemo */,
 				8E281E061AD6211C00108997 /* NESModelExtDemoTests */,
 				8E281DF11AD6211C00108997 /* Products */,
@@ -76,6 +111,8 @@
 		8E281DF21AD6211C00108997 /* NESModelExtDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8E281E361AD6227100108997 /* Model */,
+				8E281E371AD6228500108997 /* controller */,
 				8E281DF71AD6211C00108997 /* AppDelegate.h */,
 				8E281DF81AD6211C00108997 /* AppDelegate.m */,
 				8E281DFA1AD6211C00108997 /* Images.xcassets */,
@@ -98,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				8E281E091AD6211C00108997 /* NESModelExtDemoTests.m */,
+				8E281E321AD621AE00108997 /* NESDateHandlerTest.m */,
+				8E281E331AD621AE00108997 /* NESNumberHandlerTest.m */,
 				8E281E071AD6211C00108997 /* Supporting Files */,
 			);
 			path = NESModelExtDemoTests;
@@ -109,6 +148,47 @@
 				8E281E081AD6211C00108997 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8E281E131AD6219300108997 /* NESModelExt */ = {
+			isa = PBXGroup;
+			children = (
+				8E281E141AD6219300108997 /* NESDateHandler.h */,
+				8E281E151AD6219300108997 /* NESDateHandler.m */,
+				8E281E161AD6219300108997 /* NESIVar.h */,
+				8E281E171AD6219300108997 /* NESIVar.m */,
+				8E281E181AD6219300108997 /* NESModelFormat.h */,
+				8E281E191AD6219300108997 /* NESModelFormat.m */,
+				8E281E1A1AD6219300108997 /* NESNumberHandler.h */,
+				8E281E1B1AD6219300108997 /* NESNumberHandler.m */,
+				8E281E1C1AD6219300108997 /* NSObject+NESModel.h */,
+				8E281E1D1AD6219300108997 /* NSObject+NESModel.m */,
+			);
+			path = NESModelExt;
+			sourceTree = "<group>";
+		};
+		8E281E361AD6227100108997 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E281E231AD6219F00108997 /* NESDemoModel.h */,
+				8E281E241AD6219F00108997 /* NESDemoModel.m */,
+				8E281E251AD6219F00108997 /* NESFourthModel.h */,
+				8E281E261AD6219F00108997 /* NESFourthModel.m */,
+				8E281E291AD6219F00108997 /* NESOtherModel.h */,
+				8E281E2A1AD6219F00108997 /* NESOtherModel.m */,
+				8E281E2B1AD6219F00108997 /* NESThirdModel.h */,
+				8E281E2C1AD6219F00108997 /* NESThirdModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E281E371AD6228500108997 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E281E271AD6219F00108997 /* NESMainViewController.h */,
+				8E281E281AD6219F00108997 /* NESMainViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E281E211AD6219300108997 /* NESNumberHandler.m in Sources */,
+				8E281E1F1AD6219300108997 /* NESIVar.m in Sources */,
+				8E281E201AD6219300108997 /* NESModelFormat.m in Sources */,
+				8E281E221AD6219300108997 /* NSObject+NESModel.m in Sources */,
+				8E281E2F1AD6219F00108997 /* NESMainViewController.m in Sources */,
 				8E281DF91AD6211C00108997 /* AppDelegate.m in Sources */,
+				8E281E2E1AD6219F00108997 /* NESFourthModel.m in Sources */,
+				8E281E2D1AD6219F00108997 /* NESDemoModel.m in Sources */,
+				8E281E311AD6219F00108997 /* NESThirdModel.m in Sources */,
+				8E281E301AD6219F00108997 /* NESOtherModel.m in Sources */,
 				8E281DF61AD6211C00108997 /* main.m in Sources */,
+				8E281E1E1AD6219300108997 /* NESDateHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +310,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E281E0A1AD6211C00108997 /* NESModelExtDemoTests.m in Sources */,
+				8E281E341AD621AE00108997 /* NESDateHandlerTest.m in Sources */,
+				8E281E351AD621AE00108997 /* NESNumberHandlerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
