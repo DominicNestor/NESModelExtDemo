@@ -56,7 +56,7 @@
 				 };
     
 	}
-
+```
 
 * 模型定义
 
@@ -79,7 +79,7 @@
 	@property (nonatomic,retain) NESFourthModel *_path_sub_fourth;
 	@property (nonatomic,retain) NESFourthModel *_path_sub_4th;
 	@end
-
+```
 
 * 映射后通过jsonString生成的json字符串
 
@@ -112,7 +112,7 @@
 					}
 				}
 	}
-
+```
 
 ### 其他细节
 
