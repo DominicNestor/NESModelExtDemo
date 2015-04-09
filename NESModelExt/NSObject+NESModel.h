@@ -21,6 +21,7 @@
  *  ###模型类命名
  *  通过`前缀+名称+后缀`完成完整的模型类命名,默认前缀为@"",后缀为@"Model",名称为自定义字符串
  *  可以通过NESModelFormat类调整全局的前缀和后缀字符串
+ *
  *  @see NESModelFormat
  *
  *  ###属性命名
@@ -32,6 +33,15 @@
  *  以json键作为结尾,路径映射可以包含多级路径
  *      例:"_path_demo",对应json对象中path.demo对应的对象
  *
+ *  ###数据类型
+ *  数据大体分为对象,模型,字符串,数字,日期和数组,不同字段会根据类型进行自动映射,日期类型会进行单独处理
+ *  对于日期类型,通过NESDateHandler提供一个默认的NSDateFormatter对该字段进行处理,
+ *  默认情况下可以自动转换匹配"yyyy-MM-dd HH:mm:ss"格式的日期字符串
+ *  或者根据时间戳获取从"1970-1-1 00:00:00"开始计算的日期对象,
+ *  也可以自由修改NESDateHandler的全局配置对日期进行自定义处理.
+ *
+ *  @see NESDateHandler
+ *
  *  @param object 需要进行映射的对象,词典,数组均可
  *
  *  @return object为数组:消息接收类的对象所组成的数组
@@ -42,7 +52,7 @@
 /**
  *  @author writen by Nestor. Personal site - http://www.nestor.me , 15-04-09 11:06:21
  *
- *  将当前对象转成json字符串,可以将任意模型类或者包含模型累的数组转换成json字符串
+ *  将当前对象转成json字符串,可以将任意模型类或者包含模型类的数组转换成json字符串
  *
  *  @return 转换后的json字符串
  *  @warn 该方法对词典等非模型类进行转化时无法得出正确结果

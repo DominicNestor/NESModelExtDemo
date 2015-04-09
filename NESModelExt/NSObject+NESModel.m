@@ -131,7 +131,6 @@
     if (pathDict.count > 0) {
         NSString *temp = pathDict.jsonString;
         [jsonString appendString:temp];
-        NSLog(@"%s-[%s]:%@",__func__,__TIME__,temp);
     }
     else
         [jsonString deleteCharactersInRange:NSMakeRange(jsonString.length - 1, 1)];

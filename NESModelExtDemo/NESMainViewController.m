@@ -58,7 +58,7 @@
     
     NESDemoModel *model = [NESDemoModel mappingWithObject:self.fakeData];
     
-    NSLog(@"%s-[%s]:%@",__func__,__TIME__,    model._path_sub_4th.name);
+    NSLog(@"%s-[%s]:%@",__func__,__TIME__,model._path_sub_4th.name);
     
     NSLog(@"%s-[%s]:%@",__func__,__TIME__,model.jsonString);
     
